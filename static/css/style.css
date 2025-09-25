@@ -1,0 +1,19 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Exo, sans-serif;
+}
+
+.add-item-btn {
+  background-color: #b43774;
+  color: #fff;
+  border: none;
+}
+
+.add-item-btn:hover {
+  background-color: #1f4d6b;
+}
+
+.bg-white.rounded-3.shadow-sm {
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1) !important;
+}

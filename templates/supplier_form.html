@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% set is_edit = (mode == "edit") %}
+{% block title %}{{ 'Modifier' if is_edit else 'Ajouter' }} un fournisseur - Fondation Alia{% endblock %}
+
+{% block content %}
+  <h1 class="text-center">{{ 'Modification' if is_edit else "Ajout" }} d'un fournisseur</h1>
+
+  <form method="post" class="mt-4" id="supplier-form">
+    <div class="mb-3 row">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Fournisseur</label>
+        <input type="text" class="form-control" id="name" name="name"
+               value="{{ supplier.name or '' }}" required>
+      </div>
+      <div class="col-md-6">
+        <label for="address" class="form-label">Adresse</label>
+        <input type="text" class="form-control" id="address" name="address"
+               value="{{ supplier.address or '' }}" required>
+      </div>
+    </div>
+
+    <div class="mb-3 row">
+      <div class="col-md-6">
+        <label for="email" class="form-label">Mail du fournisseur</label>
+        <input type="email" class="form-control" id="email" name="email"
+               value="{{ supplier.email or '' }}" required>
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Téléphone du fournisseur</label>
+        <input type="tel" class="form-control" id="phone" name="phone"
+               value="{{ supplier.phone or '' }}" required>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+      <a href="{{ url_for('list_suppliers') }}" class="btn btn-outline-secondary">Retour</a>
+      <button type="submit" class="btn add-item-btn">
+        {{ 'Modifier' if is_edit else 'Ajouter' }}
+      </button>
+    </div>
+  </form>
+{% endblock %}
