@@ -38,7 +38,7 @@ projet_fournisseurs/
 ## ⚙️ Installation
 
 ### 1. Cloner ou créer le projet
-git clone <ton-repo-ou-copier-le-dossier>
+git clone <git@github.com:QuentinVrns/FlaskTpDonnerVie.git>
 cd projet_fournisseurs
 
 ### 2. Créer et activer un environnement virtuel
