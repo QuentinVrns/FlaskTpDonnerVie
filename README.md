@@ -39,10 +39,12 @@ projet_fournisseurs/
 
 ### 1. Cloner ou créer le projet
 git clone git@github.com:QuentinVrns/FlaskTpDonnerVie.git
+
 cd projet_fournisseurs
 
 ### 2. Créer et activer un environnement virtuel
 python3 -m venv venv
+
 source venv/bin/activate
 
 ### 3. Installer les dépendances
@@ -53,11 +55,15 @@ pip install -r requirements.txt
 ## ▶️ Lancer le projet
 
 Sous Linux/macOS :
+
 export FLASK_APP=app.py
+
 flask run
 
 Sous Windows (CMD) :
+
 set FLASK_APP=app.py
+
 flask run
 
 Puis ouvrir :
