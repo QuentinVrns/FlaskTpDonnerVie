@@ -7,18 +7,18 @@ Il utilise **Pydantic** pour valider les données du formulaire et une **liste e
 
 ## 🚀 Fonctionnalités
 
-- ✅ Liste des fournisseurs (tableau Bootstrap)
-- ✅ Ajout d’un fournisseur via formulaire
-- ✅ Modification d’un fournisseur existant
-- ✅ Validation des champs avec **Pydantic** (ex. email correct, nom non vide…)
-- ✅ Architecture claire et sans doublon :
+- Liste des fournisseurs (tableau Bootstrap)
+- Ajout d’un fournisseur via formulaire
+- Modification d’un fournisseur existant
+- Validation des champs avec **Pydantic** (ex. email correct, nom non vide…)
+- Architecture claire et sans doublon :
   - **base.html** pour le header/footer commun
   - **CSS/JS** regroupés dans `static/`
   - **Formulaire unique** pour ajouter et modifier
 
 ---
 
-## 📂 Structure du projet
+## Structure du projet
 
 projet_fournisseurs/
 ├─ app.py                # Routes Flask
@@ -35,7 +35,7 @@ projet_fournisseurs/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Cloner ou créer le projet
 git clone git@github.com:QuentinVrns/FlaskTpDonnerVie.git
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Lancer le projet
+## Lancer le projet
 
 Sous Linux/macOS :
 
@@ -71,13 +71,13 @@ http://127.0.0.1:5000
 
 ---
 
-## 📌 Remarques
+## Remarques
 
 - Les fournisseurs sont **stockés en mémoire** → si vous redémarrez le serveur, la liste est réinitialisée.
 - Pour un vrai projet, il faudrait remplacer `services.py` par une base de données (SQLite, PostgreSQL…).
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
 Projet développé dans le cadre d’un exercice Flask + Pydantic.
